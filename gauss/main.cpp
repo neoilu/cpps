@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <fstream>
 
 void print(int size, double** matrix, double* vector) {
     for (int i = 0; i < size; i++) {
@@ -101,6 +102,12 @@ int main() {
     int size;
     std::cout << "Введите размер матрицы: ";
     std::cin >> size;
+
+
+    std::ifstream input("matrix.txt");
+    std::cout << input.is_open() << "\n";
+
+
 
     double **matrix = new double*[size];
     double *vector = new double[size];
