@@ -1,0 +1,5 @@
+/.vscode
+/build
+/compile.sh
+/gauss.cpp
+/main
